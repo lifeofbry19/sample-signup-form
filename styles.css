@@ -1,0 +1,111 @@
+body {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  flex: 1;
+  margin: 0px;
+}
+.left {
+  display: flex;
+  background-image: url(https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1072&q=80);
+  justify-content: center;
+  background-position: center;
+  background-size: cover;
+  align-items: center;
+  width: 50%;
+}
+.company-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  height: 20%;
+  background-color: rgb(33, 33, 33);
+  opacity: 0.7;
+  flex: 1;
+}
+input,
+label {
+  display: block;
+}
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 5vw;
+  padding-right: 20px;
+  background-color: rgb(0, 0, 0);
+  margin-right: 0px;
+}
+.form-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  color: white;
+  font-size: 20px;
+
+  max-width: 550px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  gap: 5vh;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+  align-items: flex-start;
+}
+label {
+  font-size: 0.8rem;
+}
+input:not([type="submit"]) {
+  border-radius: 4px;
+  background-color: rgb(6, 6, 6);
+  box-shadow: 0 10px 20px -2px rgb(22, 22, 22);
+  color: white;
+}
+
+input:focus:invalid {
+  border: 2px solid red;
+}
+
+button[type="submit"] {
+  height: 50px;
+  width: 150px;
+  color: rgb(255, 144, 144);
+  background-color: black;
+  border: 3px solid rgb(255, 144, 144);
+  cursor: pointer;
+}
+button[type="submit"]:hover {
+  height: 50px;
+  width: 150px;
+  color: rgb(255, 144, 144);
+  background-color: black;
+  border: 4px solid rgb(255, 144, 144);
+  cursor: pointer;
+  font-size: 14px;
+}
+.name-input {
+  gap: 20px;
+  display: flex;
+
+  width: 100%;
+}
+.email-phone-input {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+.password-input {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+a {
+  color: rgb(255, 144, 144);
+}

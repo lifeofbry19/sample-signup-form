@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="left">
+      <div class="company-header">
+        <p>Company Header</p>
+      </div>
+    </div>
+
+    <div class="right">
+      <div class="form-header">
+        <p>
+          This is the text at the top of the form. This form is where you sign
+          up for something important. There's plenty of reasons to sign up for
+          this thing.
+          <br />
+          <br />
+          You know you want to.
+        </p>
+      </div>
+      <form action="#">
+        <div class="name-input">
+          <div class="first-name">
+            <label for="first-name">FIRST NAME</label>
+            <input type="text" name="first-name" required />
+          </div>
+
+          <div class="last-name">
+            <label for="last-name">LAST NAME</label>
+            <input type="text" name="last-name" required />
+          </div>
+        </div>
+
+        <div class="email-phone-input">
+          <div class="email">
+            <label for="email">EMAIL</label>
+            <input type="email" name="email" required />
+          </div>
+          <div class="phone-num">
+            <label for="phone-number">PHONE NUMBER</label>
+            <input
+              type="phone"
+              name="phone-number"
+              pattern="[0-9]{10}"
+              required
+            />
+          </div>
+        </div>
+        <div class="password-input">
+          <div class="password-container">
+            <label for="password">PASSWORD</label>
+            <input type="password" name="password" required />
+          </div>
+          <div class="confirm-password">
+            <label for="confirm-password">CONFIRM PASSWORD</label>
+            <input type="password" name="confirm-password" required />
+          </div>
+        </div>
+        <div class="submit-container">
+          <button type="submit" name="submit-button">Create Account</button>
+          <p>Already have an account? <a href="#">Log in</a></p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
